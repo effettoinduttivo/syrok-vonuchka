@@ -1,0 +1,130 @@
+@keyframes like {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 2;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+
+.page {
+  inline-size: 100vw;
+  block-size: 100vh;
+  box-sizing: border-box;
+  background-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #808000);
+  font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+  inline-size: 50vw;
+  block-size: 100vh;
+  margin-inline: auto;
+  position: relative;
+  background-image: url(./photo_LUSYA.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.awesome {
+  padding-inline: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: 700;
+  color: #ffefd5;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #1a1a1a, -1px -1px 0 #1a1a1a, 1px -1px 0 #1a1a1a,
+    -1px 1px 0 #1a1a1a;
+}
+
+.awesome__title {
+  grid-column: 1 / 3;
+  font-size: clamp(2.5rem, 1.7905rem + 3.0272vw, 4.375rem);
+  text-align: end;
+}
+
+.like-icon {
+  animation: like 0.5s infinite alternate linear;
+}
+
+.awesome__text {
+  align-self: end;
+  font-size: clamp(2.1875rem, 1.8327rem + 1.5136vw, 3.125rem);
+}
+
+.form {
+  justify-self: end;
+  margin-block-start: 25px;
+}
+
+.cool {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: rgba(220, 236, 220, 0.7);
+  border: 0.5px solid #1a1a1a;
+  border-radius: 5px;
+  font-size: clamp(0.875rem, 0.7331rem + 0.6054vw, 1.25rem);
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  color: #1a1a1a;
+}
+
+@media (width <= 768px) {
+  .wrapper {
+    inline-size: 100vw;
+  } 
+
+  .awesome {
+    padding-block-start: 5vh;
+    grid-template-columns: 1fr;
+  }
+
+  .form {
+    grid-row: 3;
+  }
+}

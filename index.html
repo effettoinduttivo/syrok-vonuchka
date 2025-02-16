@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <title>Правда о сырках</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="page">
+    <div class="wrapper">
+      <div class="overlay">
+        <button
+          class="syrok__button"
+          type="button"
+          onclick="window['dialog-id'].showModal()"
+          aria-controls="dialog-id"
+        >
+          Кнопка для&nbsp;сырков
+        </button>
+      </div>
+    </div>
+    <dialog id="dialog-id" class="syrok__dialog">
+      <p class="pistryn">ТЫ ПИСТРУН</p>
+      <div class="button-wrapper">
+        <form class="form" method="get" action="./agree/agree.html">
+          <button class="pistryn__button agree" type="submit">
+            Согласиться с&nbsp;зюзиком во&nbsp;всём
+          </button>
+        </form>
+        <form class="form" method="get" action="./disagree/disagree.html">
+          <button class="pistryn__button disagree" type="submit">
+            Вонять как&nbsp;Люся
+          </button>
+        </form>
+      </div>
+    </dialog>
+  </body>
+</html>
