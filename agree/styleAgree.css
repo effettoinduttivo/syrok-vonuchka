@@ -112,6 +112,11 @@ button {
   font-weight: 700;
   text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
   color: #1a1a1a;
+  transition: scale 0.2s linear;
+}
+
+.cool:hover {
+  scale: 1.1;
 }
 
 @media (width <= 768px) {
@@ -122,6 +127,10 @@ button {
   .awesome {
     padding-block-start: 5vh;
     grid-template-columns: 1fr;
+  }
+
+  .awesome__text {
+    align-self: start;
   }
 
   .form {
