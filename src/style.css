@@ -131,8 +131,6 @@ button {
   font-size: clamp(1.125rem, 0.7229rem + 1.7154vw, 2.1875rem);
   text-transform: uppercase;
   letter-spacing: 0.01em;
-  /*text-shadow: 1px 1px 0 #ffb6c1, -1px -1px 0 #ffb6c1, 1px -1px 0 #fff,
-    -1px 1px 0 #fff;*/
   background-color: rgb(255, 227, 224, 0.7);
   transition: box-shadow 0.5s linear;
   position: relative;
